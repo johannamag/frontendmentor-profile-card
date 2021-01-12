@@ -17,4 +17,114 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  background-color: var(--cyan);
+  overflow: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: -450px;
+  left: -100px;
+  width: 50%;
+  height: 100%;
+  background-image: url("./media/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  bottom: -450px;
+  right: -100px;
+  width: 50%;
+  height: 100%;
+  background-image: url("./media/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.card {
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.card-top {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("./media/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 125px;
+}
+
+.img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.age {
+  font-weight: 400;
+  color: var(--gray-blue);
+}
+
+.city {
+  font-size: 0.9rem;
+  color: var(--gray-blue);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark-gray);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15px 15px 15px;
+}
+
+.number {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--gray-blue);
 }
